@@ -17,6 +17,8 @@ class BinarySearchTree {
 public:
     BinarySearchTree();
     ~BinarySearchTree();
+    BinarySearchTree(const BinarySearchTree&) = delete;
+    BinarySearchTree& operator=(const BinarySearchTree&) = delete;
 
     bool insert(int value);
     bool remove(int value);
